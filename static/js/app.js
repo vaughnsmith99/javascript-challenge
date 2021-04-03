@@ -84,16 +84,19 @@ function lookAtState(state = "") {
 }
 
 function countryUS(country = "") {
+    console.log(`Checking Country: ${country}`)
 	if (country === null || country.trim().toLowerCase().length < 1)
 		return null;
 	country = country.trim().toLowerCase();
 	if ( country === "usa" )
 		country = "us";
+    if ( country != "usa" )
+        console.log("Cities outside of the USA are not recognized.");
 	return country;
 }
 
 function lookAtShape(shape) {
-    console.log(`Fetching shape: ${shape}`)
+    console.log(`Fetching shape: ${shape}`);
 	if (shape.trim().length < 1)
 		return null;
 	return shape.trim();
@@ -108,7 +111,7 @@ function filterValues(formData, tableData) {
 			});
 		}
 	}
-    console.log(data)
+    console.log(`Data: ${data}`);
 	return data;
 }
 
