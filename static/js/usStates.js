@@ -59,3 +59,5 @@ var usStates = [
     { name: 'WISCONSIN', abbreviation: 'WI'},
     { name: 'WYOMING', abbreviation: 'WY' }
 ];
+
+// Source: https://stackoverflow.com/questions/31456637/creating-drop-down-menu-of-states-using-array
